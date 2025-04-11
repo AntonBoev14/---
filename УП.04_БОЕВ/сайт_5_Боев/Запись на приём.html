@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на прием - Салон Красоты</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0e5e5; /* Нежный фон */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff69b4; /* Ярко розовое меню */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+		header img {
+			height: 60px; /* Высота логотипа */
+			margin-right: 20px; /* Отступ справа от логотипа */
+		}
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+		 header img {
+            height: 60px; /* Высота логотипа */
+            margin-right: 20px; /* Отступ справа от логотипа */
+        }
+        nav a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+        section {
+            padding: 20px; /* Отступы для секции */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff69b4; /* Ярко розовое подвал */
+            color: white;
+        }
+        form {
+            max-width: 600px; /* Максимальная ширина формы */
+            margin: auto; /* Центрирование формы */
+            background-color: white; /* Белый фон для формы */
+            padding: 20px; /* Отступы внутри формы */
+            border-radius: 8px; /* Закругленные углы */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень для формы */
+        }
+        input, select, textarea {
+            width: 100%; /* Ширина элементов формы */
+            padding: 10px; /* Отступы внутри элементов формы */
+            margin-bottom: 15px; /* Отступы между элементами формы */
+            border-radius: 4px; /* Закругленные углы элементов формы */
+            border: 1px solid #ccc; /* Граница элементов формы */
+        }
+        button {
+            background-color: #ff69b4; /* Цвет кнопки */
+            color: white; /* Цвет текста кнопки */
+            border: none; /* Без границы у кнопки */
+            padding: 10px; /* Отступы внутри кнопки */
+            cursor: pointer; /* Указатель при наведении на кнопку */
+        }
+        button:hover {
+            background-color: #ff1493; /* Темнее при наведении на кнопку */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+	    <img src="log PS.svg" alt="Логотип Салона Красоты"> <!-- Замените "logo.png" на имя вашего файла -->
+
+    <h1>Салон Красоты - PotentialStilish</h1>
+    <nav>
+        <a href="Главная.html">Главная</a> <!-- Ссылка на главную страницу -->
+        <a href="Услуги.html">Услуги</a> <!-- Ссылка на услуги -->
+        <a href="О нас.html">О нас</a> <!-- Ссылка на страницу "О нас" -->
+        <a href="Запись на приём.html">Запись на прием</a> <!-- Ссылка на текущую страницу -->
+        <a href="Контакты.html">Контакты</a> <!-- Ссылка на контакты -->
+		<a href="Обратная связь.html">Обратная связь</a>
+
+    </nav>
+</header>
+
+<section id="booking">
+    <h2>Запись на прием</h2>
+    <p>Пожалуйста, заполните форму ниже, чтобы записаться на прием в наш салон.</p>
+
+    <form action="#" method="post">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Телефон:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="service">Выберите услугу:</label>
+        <select id="service" name="service" required>
+            <option value="">--Выберите услугу--</option>
+            <option value="стрижка">Стрижка</option>
+            <option value="окрашивание">Окрашивание</option>
+            <option value="маникюр">Маникюр</option>
+            <option value="педикюр">Педикюр</option>
+        </select>
+
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Время:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="message">Дополнительные комментарии:</label>
+        <textarea id="message" name="message"></textarea>
+
+        <button type="submit">Записаться</button> <!-- Кнопка отправки формы -->
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Салон Красоты. Все права защищены.
+</footer>
+
+</body>
+</html>
